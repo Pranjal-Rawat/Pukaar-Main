@@ -10,6 +10,11 @@ app.use(cors({
 }));
 
 
-app.listen('/ ', () => {
+app.get('/' , ( req,res) =>{ 
+    res.send("Server Live Pukaar") ;
+})
+
+
+app.listen(3000, () => {
     console.log("Server Live Pukaar")
 })
