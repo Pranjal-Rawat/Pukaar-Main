@@ -1,22 +1,19 @@
-import React from 'react'
-import { Suspense , lazy } from 'react'
-import  { BrowserRouter, Routes , Route} from 'react-router-dom'
-import Nav from './components/Nav';
-import Footer from './components/Footer';
+import React, { lazy, Suspense } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import Loader from './components/Loader'
 
+const Home = lazy(() => import('./pages/Home'))
 
-const Home = lazy(() => import('./pages/Home'));
-const Joinus = lazy(() => import('./pages/Joinus'));
 export default function App() {
   return (
-    <Suspense fallback={<>Loading  ... </>}>
-
+    <Suspense fallback={<Loader></Loader>}>
       <BrowserRouter>
-      <Nav/>
-        <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/joinus' element={<Joinus/>}></Route>
-        </Routes>
+        <Nav/>
+          <Routes>
+            <Route path='/' element={<Home></Home>} />
+          </Routes>
         <Footer/>
       </BrowserRouter>
     </Suspense>
