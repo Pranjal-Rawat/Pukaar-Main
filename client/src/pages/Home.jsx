@@ -4,13 +4,13 @@ import video2 from '../Assests/partners.mp4'
 import { Button, Typography } from '@mui/material'
 import Contact from '../components/Contact'
 import Partners from '../components/Partners'
+import About from '../components/About'
 export default function Home() {
   return (
     <>
-
       <div className='flex flex-col lg:flex-row hero-img w-full lg:mt-0 mt-28 gap-5'>
         <video src={video} autoPlay muted loop></video>
-        <div className="flex items-center mt-10 flex-col px-4 w-full gap-5">
+        <div className="flex items-center mt-10 pt-10 flex-col px-4 w-full gap-5">
           <p className='font-bold lg:text-4xl text-3xl px-5 hero-text' style={{ color: "#6e1b2a" }}>
             Empowering Communities for a Harmonious and Sustainable Future
           </p>
@@ -24,10 +24,11 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <Partners />
-      <div className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-28 gap-5">
+      <About/>
+      
+      <div id='partners' className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-28 gap-5">
         <video className='lg:h-96' src={video2} autoPlay muted loop></video>
-        <div className="flex  mt-10 flex-col px-10 w-full gap-5">
+        <div className="flex  mt-2 flex-col px-10 w-full gap-5">
           <p className='font-bold  lg:text-4xl text-3xl border-l-8  pl-4 hero-text' style={{ color:"#020202", borderColor: "#6e1b2a" }}>
             Our Partners
           </p>
@@ -59,6 +60,7 @@ export default function Home() {
 
         </div>
       </div>
+      <Partners />
       <Contact />
     </>
   )

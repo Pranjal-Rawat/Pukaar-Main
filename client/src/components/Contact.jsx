@@ -1,15 +1,58 @@
-// import { Button } from '@mui/material'
-import React from 'react'
-import { LoadingButton as Button } from '@mui/lab'
+import React, { useState } from 'react';
+import { LoadingButton as Button } from '@mui/lab';
 
 export default function Contact() {
+    const [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setLoading(true);
+
+        try {
+            const response = await fetch('https://your-api-endpoint.com/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                // Handle successful response
+                alert('Form submitted successfully!');
+            } else {
+                // Handle errors
+                alert('Failed to submit the form.');
+            }
+        } catch (error) {
+            // Handle network errors
+            alert('An error occurred. Please try again.');
+        }
+
+        setLoading(false);
+    };
+
     return (
-        <div id={"contact"}>
+        <div id="joinus">
             <section className="relative z-10 overflow-hidden bg-white dark:bg-dark py-0 lg:py-[60px] px-5 lg:mt-0 mt-20">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap -mx-4 lg:justify-between">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-                            <div className="mb-9  max-w-[570px] lg:mb-0">
+                            <div className="mb-9 max-w-[570px] lg:mb-0">
                                 <p className='font-bold text-start lg:text-4xl text-3xl px-5 hero-text' style={{ color: "#6e1b2a" }}>
                                     Get in Touch with Us
                                 </p>
@@ -17,9 +60,7 @@ export default function Contact() {
                                     Are you interested in investing in farmhouses, agricultural land, property, or raw houses? Contact us for more information.
                                 </p>
                                 <div className="mb-8 flex w-full max-w-[370px]">
-                                    <div
-                                        className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]"
-                                    >
+                                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                                         <svg
                                             width="32"
                                             height="32"
@@ -37,18 +78,14 @@ export default function Contact() {
                                         <h4 style={{ color: "#6e1b2a" }} className="mb-1 text-xl font-bold text-dark dark:text-white">
                                             Our Location
                                         </h4>
-                                        <p style={{  }} className="text-base text-body-color dark:text-dark-6">
-                                            Nearby Lucknow kanpur Highway,Unnao
-
-                                            Landmark - Anandi Magic water Park, Ramada hotels,
-                                            Chandigarh University Lucknow campus
+                                        <p className="text-base text-body-color dark:text-dark-6">
+                                            Nearby Lucknow Kanpur Highway, Unnao
+                                            Landmark - Anandi Magic Water Park, Ramada Hotels, Chandigarh University Lucknow Campus
                                         </p>
                                     </div>
                                 </div>
                                 <div className="mb-8 flex w-full max-w-[370px]">
-                                    <div
-                                        className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]"
-                                    >
+                                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                                         <svg
                                             width="32"
                                             height="32"
@@ -83,14 +120,11 @@ export default function Contact() {
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
                                             9936251470
-
                                         </p>
                                     </div>
                                 </div>
                                 <div className="mb-8 flex w-full max-w-[370px]">
-                                    <div
-                                        className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]"
-                                    >
+                                    <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
                                         <svg
                                             width="32"
                                             height="32"
@@ -103,6 +137,7 @@ export default function Contact() {
                                                 fill="currentColor"
                                             />
                                         </svg>
+
                                     </div>
                                     <div className="w-full">
                                         <h4 style={{ color: "#6e1b2a" }} className="mb-1 text-xl font-bold text-dark dark:text-white">
@@ -117,43 +152,56 @@ export default function Contact() {
                         </div>
                         <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-                                <form>
+                                <form onSubmit={handleSubmit}>
                                     <div className="mb-6">
                                         <input
+                                        required
                                             type="text"
+                                            name="name"
                                             placeholder="Your Name"
+                                            value={formData.name}
+                                            onChange={handleChange}
                                             className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                                         />
                                     </div>
                                     <div className="mb-3">
                                         <input
+                                        required
                                             type="email"
+                                            name="email"
                                             placeholder="Your Email"
+                                            value={formData.email}
+                                            onChange={handleChange}
                                             className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                                         />
                                     </div>
                                     <div className="mb-3">
                                         <input
+                                        required
                                             type="text"
+                                            name="phone"
                                             placeholder="Your Phone"
+                                            value={formData.phone}
+                                            onChange={handleChange}
                                             className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
                                         />
                                     </div>
                                     <div className="mb-3">
                                         <textarea
+                                        required
                                             rows="6"
+                                            name="message"
                                             placeholder="Your Message"
+                                            value={formData.message}
+                                            onChange={handleChange}
                                             className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
                                         ></textarea>
                                     </div>
                                     <div>
-                                      
                                         <Button
-                                            loading
-                                            // loadingPosition="start"
-                                            startIcon={<></>}
+                                            loading={loading}
                                             variant="outlined"
-                                            style={{ backgroundColor: "#6e1b2a" , color:"#fff" }}
+                                            sx={{ backgroundColor: "#6e1b2a", color: "#fff", cursor: "pointer" }}
                                             type="submit"
                                             className="w-full p-3 text-white transition border rounded border-primary"
                                         >
@@ -161,13 +209,21 @@ export default function Contact() {
                                         </Button>
                                     </div>
                                 </form>
-                              
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </div>
-    )
+    );
 }
+
+
+
+
+// //3
+
+// //2
+
+
+//1

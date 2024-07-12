@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
 
         {/* <!--Copyright section--> */}
-        <div class="w-full  p-4 text-center">
+        <div class="w-full p-4 text-center">
           © 2024 Copyright
           <a href="https://tw-elements.com/">Purkul</a>
         </div>
