@@ -82,8 +82,8 @@ export default function Nav() {
                         </IconButton>
                     </div>
                     <div className="data flex flex-col gap-2">
-                        <small className='text-gray-600'>You may reach us here</small>
-                        <small className='font-bold text-slate-700 text-xs'>Harrawala Dehradun</small>
+                        <small className='text-gray-600'>You may reach us at</small>
+                        <small className='font-bold text-slate-700 text-xs'><a href="https://www.google.com/maps/dir/?api=1&destination=Salan%20Gaon,%20Bhagwant%20Pur,%20Brahman%20Gaon,%20Uttarakhand%20248001,%20India">Purkul Village, Dehradun</a></small>
                     </div>
                 </div>
                 <div className="flex gap-4">
@@ -93,8 +93,8 @@ export default function Nav() {
                         </IconButton>
                     </div>
                     <div className="data flex flex-col gap-2">
-                        <small className='text-gray-600'>You may reach us here</small>
-                        <small className='font-bold text-slate-700 text-xs'>Harrawala Dehradun</small>
+                        <small className='text-gray-600'>Email Us at</small>
+                        <small className='font-bold text-slate-700 text-xs'>pukaarsanstha@gmail.com</small>
                     </div>
                 </div>
                 <div className="flex gap-4">
@@ -104,8 +104,8 @@ export default function Nav() {
                         </IconButton>
                     </div>
                     <div className="data flex flex-col gap-2">
-                        <small className='text-gray-600'>You may reach us here</small>
-                        <small className='font-bold text-slate-700 text-xs'>Harrawala Dehradun</small>
+                        <small className='text-gray-600'>Contact Us at</small>
+                        <small className='font-bold text-slate-700 text-xs'>+91 91490 23810</small>
                     </div>
                 </div>
             </nav>
