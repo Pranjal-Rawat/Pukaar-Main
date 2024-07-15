@@ -10,19 +10,14 @@ export default function Joinus() {
                         {/* <!-- Add content about joining here --> */}
                         <hr style={{ width: '50%', margin: 'auto' }} />
                         <p className="secsubTag textsmall">
-                            Join Us at Pukaar Sanstha
-                            At Pukaar Sanstha, we believe in the power of community and the impact of collective effort. Your
-                            support and involvement are crucial to achieving our mission of creating positive and lasting change.
-                            There are many ways you can join us in making a difference:
+                            We believe in the power of community and the impact of collective effort. Your support and involvement are crucial to achieving our mission of creating positive and lasting change.
                             <br />
-                            Volunteer with Us
-                            Share your time, skills, and passion by volunteering with Pukaar Sanstha. Whether you have expertise in
-                            education, training, community outreach,
-                            or administrative support, your contribution can help us reach more individuals and communities in need.
+                           There are many ways you can join us:<br />
+                            You can share your time, skills, and passion by volunteering with us. Whether you have expertise in education, training, community outreach, or administrative support, your contribution can help us reach more individuals and communities in need.
                             <br />
-                            Educational Programs: Assist in teaching, tutoring, or organizing educational workshops.<br />
-                            Skills Training: Help conduct training sessions in various trades and digital literacy.<br />
-                            Community Outreach: Engage with local communities, spread awareness, and support our initiatives.
+                            <b>Educational Programs(link)</b>: Assist in teaching, tutoring, or organizing educational workshops.
+                            <b>Skills Training<b>(link): Help conduct training sessions in various trades and digital literacy.
+                            <b>Community Outreach<b>(link): Engage with local communities, spread awareness, and support our initiatives.
                         </p>
                     </p>
                 </div>
