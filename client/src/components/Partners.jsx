@@ -50,7 +50,7 @@ export default function Partners() {
                                     </svg>
                                     <div className="ml-4 text-xl heading">Himaagman Foundation</div>
                                 </div>
-                                <p className="leading-loose text-gray-500">We are reaching out to you with an opportunity to make a significant impact on the lives of 150 children from underprivileged communities through our initiative, "Empowering Futures." This project aims to promote academic education among these children, providing them with essential teaching and learning materials, school bags, and uniforms.
+                                <p className="leading-loose text-gray-500">Himaagman Foundation,we are reaching out to you with an opportunity to make a significant impact on the lives of 150 children from underprivileged communities through our initiative, "Empowering Futures." This project aims to promote academic education among these children, providing them with essential teaching and learning materials, school bags, and uniforms.
                                 </p>
                             </div>
 
@@ -98,6 +98,33 @@ export default function Partners() {
                                 <p id="" className="leading-loose text-gray-500">
                                 Project Aaina is an organization that started with the objective of self-reflection. The purpose of this initiative is to stream into the inner consciousness of an individual through an organic artistic process. We curate a diverse range of events, spanning from immersive mindfulness retreats and community welfare activities to engaging one-day experiences that facilitate a connection.
                                 </p>
+
+                                <!--NEW PARTNERS-->
+                                   <div className="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-4">
+                                <div className="flex items-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="currentColor" className="h-6 w-6 text--500">
+                                        <path
+                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                        </path>
+                                    </svg>
+                                    <div className="ml-4 text-xl heading">Hindska Trust</div>
+                                </div>
+                                <p className="leading-loose text-gray-500">Hindska Trust, we believe that education is a fundamental right of every individual, regardless of their background, economic ability, socioeconomic status, or geographic location. Hindska is driven by the belief that education is the key to empowering individuals and communities, fostering economic growth, and promoting social progress. </p>
+                            </div>
+
+                                <div className="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-4">
+                                <div className="flex items-center mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="currentColor" className="h-6 w-6 text--500">
+                                        <path
+                                            d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z">
+                                        </path>
+                                    </svg>
+                                    <div className="ml-4 text-xl heading">Zindagi Mubarak</div>
+                                </div>
+                                <p className="leading-loose text-gray-500"> A #festival about celebrating life 🌼🌿A venture by @ishqestantv and @meghna_chatterji</p>
+                            </div>
                             </div>
                         </div>
                     </div>
