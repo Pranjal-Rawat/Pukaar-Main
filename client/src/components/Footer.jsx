@@ -69,24 +69,6 @@ export default function Footer() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
-                  viewBox="0 0 512 512">
-                  <!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                  <path
-                    d="M502.3 190.8L327.4 323.3c-15.4 11.7-36.8 11.7-52.2 0L9.7 190.8C3.6 186.9 0 180.5 0 173.6v-27.3c0-17.2 13.6-31.4 30.7-31.4H53c17.1 0 30.7 14.2 30.7 31.4v17.8l170.7 122.8 170.7-122.8v-17.8c0-17.2 13.6-31.4 30.7-31.4h22.3c17.1 0 30.7 14.2 30.7 31.4v27.3c0 6.9-3.6 13.3-9.7 17.2zM32 147.7v222.2c0 17.1 13.6 31.4 30.7 31.4h388.6c17.1 0 30.7-14.2 30.7-31.4V147.7l-192.7 138.7c-15.4 11.7-36.8 11.7-52.2 0L32 147.7z" />
-                </svg>
-              </span>
-            </a>
-
-
-            <a
-              href="#!"
-              type="button"
-              class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
-              data-twe-ripple-init>
-              <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
                   viewBox="0 0 448 512">
                   {/* <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. --> */}
                   <path
@@ -112,25 +94,6 @@ export default function Footer() {
               </span>
             </a>
 
-
-            <a
-              href="#!"
-              type="button"
-              class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
-              data-twe-ripple-init>
-              <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 576 512">
-                  {/*                      <!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. --> */}
-                  <path
-                    d="M549.655 124.083C540.651 89.69 510.823 64 475.245 64H100.755C65.177 64 35.348 89.69 26.345 124.083 16.504 162.202 16 204.097 16 256s.504 93.798 10.345 131.917C35.348 422.31 65.177 448 100.755 448h374.49c34.578 0 64.406-25.69 73.41-60.083C559.496 349.798 560 307.903 560 256s-.504-93.798-10.345-131.917zM232 332V180l176 76-176 76z" />
-                </svg>
-              </span>
-            </a>
-
-
             <a
               href="#!"
               type="button"
@@ -148,14 +111,14 @@ export default function Footer() {
               </span>
             </a>
           </div>
-        </div >
+        </div>
 
         {/* <!--Copyright section--> */}
-        < div class="w-full p-4 text-center" >
+        <div class="w-full p-4 text-center">
           © 2024 Copyright
-          <a href="https://tw-elements.com/" > Purkul</a>
-        </div >
-      </footer >
-    </div >
+          <a href="https://tw-elements.com/">Purkul</a>
+        </div>
+      </footer>
+    </div>
   )
 }
