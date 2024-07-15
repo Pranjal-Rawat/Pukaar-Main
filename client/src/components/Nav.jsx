@@ -140,7 +140,7 @@ export default function Nav() {
                         </div>
                     </NavLink>
                     <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="blog">Blog</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' onClick={handleDonateClick}>Donate Now</Link>
+{/*                     <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' onClick={handleDonateClick}>Donate Now</Link> */}
 
                 </div>
             </nav>
