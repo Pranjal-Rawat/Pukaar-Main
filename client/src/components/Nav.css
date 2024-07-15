@@ -56,3 +56,19 @@
         font-weight: 600;
     }
 }
+
+
+
+.showDropdown{
+    visibility: visible;
+    z-index: 900;
+    opacity: 1;
+    transition: all .1s linear;
+}
+
+.hideDropdown{
+    transition: all .1s linear;
+    visibility: hidden;
+    z-index: -900;
+    opacity: 0;
+}
