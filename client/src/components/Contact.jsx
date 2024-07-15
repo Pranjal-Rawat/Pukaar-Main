@@ -57,7 +57,7 @@ export default function Contact() {
                                     Get in Touch with Us
                                 </p>
                                 <p className="px-5 pt-4 text-base leading-relaxed text-body-color dark:text-dark-6 mb-3">
-                                    Are you interested in investing in farmhouses, agricultural land, property, or raw houses? Contact us for more information.
+                                    Contact us for more information and feel free to ask about any query.
                                 </p>
                                 <div className="mb-8 flex w-full max-w-[370px]">
                                     <div className="bg-primary/5 text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded sm:h-[70px] sm:max-w-[70px]">
@@ -79,8 +79,9 @@ export default function Contact() {
                                             Our Location
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            Nearby Lucknow Kanpur Highway, Unnao
-                                            Landmark - Anandi Magic Water Park, Ramada Hotels, Chandigarh University Lucknow Campus
+                                            Near Sakya Academy,  Samrajya Cottage,</br>
+                                            Village Uttari Gaon road, Bhagwant Pur,<br>
+                                            Dehradun, Uttarakhand 248009
                                         </p>
                                     </div>
                                 </div>
@@ -119,7 +120,7 @@ export default function Contact() {
                                             Phone Number
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            9936251470
+                                            +91 91490 23810
                                         </p>
                                     </div>
                                 </div>
@@ -144,7 +145,7 @@ export default function Contact() {
                                             Email Address
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            urban.info@gmail.com
+                                            pukaarsanstha@gmail.com
                                         </p>
                                     </div>
                                 </div>
