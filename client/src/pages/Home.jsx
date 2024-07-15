@@ -57,6 +57,14 @@ export default function Home() {
             <p>Proect Aina</p>
             <a className='text-indigo-600' href="link/">link/</a>
           </li>
+          <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
+            <p>Hindska Trust</p>
+            <a className='text-indigo-600' href="link/">link/</a>
+          </li>
+          <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
+            <p>Zindagi Mubarak</p>
+            <a className='text-indigo-600' href="link/">link/</a>
+          </li>
 
         </div>
       </div>
