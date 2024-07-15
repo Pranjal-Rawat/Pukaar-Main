@@ -12,14 +12,14 @@ export default function Home() {
         <video src={video} autoPlay muted loop></video>
         <div className="flex items-center mt-10 pt-10 flex-col px-4 w-full gap-5">
           <p className='font-bold lg:text-4xl text-3xl px-5 hero-text' style={{ color: "#6e1b2a" }}>
-            Empowering Communities for a Harmonious and Sustainable Future
+            Empowering Communities
           </p>
           <p className='px-5'>
             Welcome to Pukaar Sanstha, where our vision is to create a harmonious and sustainable world where individuals and communities thrive through empowerment, employment generation, sustainability, and eco-tourism. Discover our mission, initiatives, and the positive impact we're making both locally and globally.
           </p>
           <p className='flex justify-start w-full px-5' style={{ color: "#6e1b2a" }}>
             <Button variant='outlined' color='inherit' sx={{ fontWeight: "600" }}>
-              Join Us
+              Donate now
             </Button>
           </p>
         </div>
