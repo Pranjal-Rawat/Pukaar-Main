@@ -191,13 +191,13 @@ export default function Nav() {
                             <IconButton color='inherit'>
                                 <Mail />
                             </IconButton>
-                            <strong className='flex items-center'>pukarhelpline@gmail.com</strong>
+                            <strong className='flex items-center'>pukaarsanstha@gmail.com</strong>
                         </span>
                         <span className='flex align-middle gap-3'>
                             <IconButton color='inherit'>
                                 <Call />
                             </IconButton>
-                            <strong className='flex items-center'>7017233256</strong>
+                            <strong className='flex items-center'>+91 91949023810</strong>
                         </span>
                     </div>
                 </div>
