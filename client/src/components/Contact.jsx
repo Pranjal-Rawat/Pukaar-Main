@@ -79,8 +79,8 @@ export default function Contact() {
                                             Our Location
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            Near Sakya Academy,  Samrajya Cottage,</br>
-                                            Village Uttari Gaon road, Bhagwant Pur,<br>
+                                            Near Sakya Academy,  Samrajya Cottage,
+                                            Village Uttari Gaon road, Bhagwant Pur,
                                             Dehradun, Uttarakhand 248009
                                         </p>
                                     </div>
