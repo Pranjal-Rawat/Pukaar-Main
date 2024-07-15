@@ -35,37 +35,36 @@ export default function Home() {
 
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Project Purkul </p>
-            <a className='text-indigo-600' href="https://www.projectpurkul.com/">link/</a>
+            <a className='text-indigo-600' href="https://www.projectpurkul.com/">projectpurkul.com</a>
           </li>
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Gyanoday </p>
-            <a className='text-indigo-600' href="link/">link/</a>
+            <a className='text-indigo-600' href="https://gyanoday.org.in/">gyanoday.org.in/</a>
           </li>
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Himaagman Foundation </p>
-            <a className='text-indigo-600' href="link/">link/</a>
+            <a className='text-indigo-600' href="https://www.facebook.com/khadimissionwardha/">himaagmanfoundationfacebook.com</a>
           </li>
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Ucost </p>
-            <a className='text-indigo-600' href="link/">link/</a>
+            <a className='text-indigo-600' href="https://ucost.uk.gov.in/">ucost.uk.gov.in/</a>
           </li>
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Giri Foundation</p>
-            <a className='text-indigo-600' href="link/">link/</a>
+            <a className='text-indigo-600' href="https://www.girifoundation.org/">girifoundation.org</a>
           </li>
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Proect Aina</p>
-            <a className='text-indigo-600' href="link/">link/</a>
+            <a className='text-indigo-600' href="https://www.projectaaina.in/">projectaina.in</a>
           </li>
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Hindska Trust</p>
-            <a className='text-indigo-600' href="link/">link/</a>
+            <a className='text-indigo-600' href="https://www.hindskatrust.org/">hindskatrust</a>
           </li>
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Zindagi Mubarak</p>
-            <a className='text-indigo-600' href="link/">link/</a>
+            <a className='text-indigo-600' href="https://www.instagram.com/zindagi.mubarak/">insta.zindagimubarak.com</a>
           </li>
-
         </div>
       </div>
       <Partners />
