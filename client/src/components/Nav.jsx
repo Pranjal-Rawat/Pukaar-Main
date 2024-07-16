@@ -20,24 +20,7 @@ export default function Nav() {
     const [customAmount, setCustomAmount] = useState('');
     const [showDropdown, setShowDropdown] = useState(false);
 
-    const handleDonation = (amount) => {
-        setDonationAmount(amount);
-        setCustomAmount(''); // Clear custom amount when preset amount is selected
-    };
-
-    const handleCustomAmountChange = (event) => {
-        setCustomAmount(event.target.value);
-        setDonationAmount(''); // Clear preset amount when custom amount is entered
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // Handle donation submission logic here
-        console.log(`Donating ${donationAmount || customAmount}`);
-        // Optionally, close modal after submission
-        closeModal();
-    };
-
+   
 
     useEffect(() => {
         const handleScroll = () => {
@@ -60,12 +43,10 @@ export default function Nav() {
     }, []);
 
     const handleDonateClick = () => {
-       window.location.href = "https://razorpay.me/@tgciinstitute";
+        window.location.href = "https://razorpay.me/@tgciinstitute";
     };
 
-    const closeModal = () => {
-        setShowModal(false); // Close the modal
-    };
+
 
 
 
@@ -140,7 +121,7 @@ export default function Nav() {
                         </div>
                     </NavLink>
                     <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="blog">Blog</Link>
-{/*                     <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' onClick={handleDonateClick}>Donate Now</Link> */}
+                    {/*                     <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' onClick={handleDonateClick}>Donate Now</Link> */}
 
                 </div>
             </nav>
@@ -179,7 +160,7 @@ export default function Nav() {
                             setShowDropdown(!showDropdown);
                         }} style={{ cursor: "pointer" }} smooth={true} duration={500} to="/newsletter">Newsletters</Link></li>
                         {
-                            showDropdown && <div style={{transition:".2s all gap-1 linear"}}>
+                            showDropdown && <div style={{ transition: ".2s all gap-1 linear" }}>
                                 <li className='px-3'><Link>Previous</Link></li>
                                 <li className='px-3'><Link>Latest</Link></li>
                                 <li className='px-3'><Link>All Newsletters</Link></li>
@@ -220,75 +201,7 @@ export default function Nav() {
                     </Button>
                 </div>
             </nav>
-            <Modal
-                isOpen={showModal}
-                onRequestClose={closeModal}
-                overlayClassName="overlay"
-                className="fixed h-96 top-32 modal w-full bg-white"
-            >
-                <div className="modal-content p-6">
-                    <h2>Donate Now</h2>
-                    <form onSubmit={handleSubmit}>
-                        <div className="flex flex-col gap-4 mt-4">
-                            {/* Preset donation amounts */}
-                            <div>
-                                <label className="inline-flex items-center">
-                                    <input
-                                        type="radio"
-                                        name="donation"
-                                        value="100"
-                                        checked={donationAmount === '100'}
-                                        onChange={() => handleDonation('100')}
-                                        className="form-radio"
-                                    />
-                                    <span className="ml-2">$100</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label className="inline-flex items-center">
-                                    <input
-                                        type="radio"
-                                        name="donation"
-                                        value="200"
-                                        checked={donationAmount === '200'}
-                                        onChange={() => handleDonation('200')}
-                                        className="form-radio"
-                                    />
-                                    <span className="ml-2">$200</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label className="inline-flex items-center">
-                                    <input
-                                        type="radio"
-                                        name="donation"
-                                        value="500"
-                                        checked={donationAmount === '500'}
-                                        onChange={() => handleDonation('500')}
-                                        className="form-radio"
-                                    />
-                                    <span className="ml-2">$500</span>
-                                </label>
-                            </div>
-                            {/* Custom donation amount */}
-                            <div className="flex items-center gap-2">
-                                <input
-                                    type="text"
-                                    placeholder="Enter custom amount"
-                                    value={customAmount}
-                                    onChange={handleCustomAmountChange}
-                                    className="form-input w-full"
-                                />
-                            </div>
-                            {/* Submit button */}
-                            <div className="flex justify-end">
-                                <Button type="submit" variant="contained" color="primary">Donate</Button>
-                                <Button onClick={closeModal} className="ml-2">Close</Button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </Modal>
+
 
         </>
     );

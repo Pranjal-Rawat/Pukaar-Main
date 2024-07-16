@@ -1,0 +1,21 @@
+/* Add this CSS to your project */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: .5rem;
+    padding-bottom: 1rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for WebKit browsers */
+}
+
+.scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+}

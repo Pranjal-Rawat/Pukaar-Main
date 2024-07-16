@@ -10,7 +10,7 @@ export default function App() {
   return (
     <Suspense fallback={<Loader></Loader>}>
       <BrowserRouter>
-        <Nav/>
+        {/* <Nav/> */}
           <Routes>
             <Route path='/' element={<Home></Home>} />
           </Routes>
