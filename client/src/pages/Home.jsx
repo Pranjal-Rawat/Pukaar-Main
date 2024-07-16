@@ -17,7 +17,10 @@ export default function Home() {
           </p>
           <p className='px-5'>
             Welcome to Pukaar Sanstha, where our vision is to create a harmonious and sustainable world where individuals and communities thrive through empowerment, employment generation, sustainability, and eco-tourism. Discover our mission, initiatives, and the positive impact we're making both locally and globally.
-    <br/>
+            <br />
+
+          </p>
+          <p className="px-5 lg:flex hidden">
             At Pukaar Sanstha, we strive to foster a future where every individual and community not only survives but thrives. Through our dedicated mission, we aim to empower marginalized groups, generate meaningful employment opportunities, promote sustainability practices, and champion eco-tourism initiatives. By doing so, we believe in creating a positive impact locally and globally, ensuring a more harmonious and sustainable world for generations to come.
           </p>
           <p className='flex justify-start w-full px-5' style={{ color: "#6e1b2a" }}>
@@ -27,17 +30,17 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <About/>
+      <About />
 
-      <div id='partners' className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-28 gap-5">
+      <div id='partners' className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-8 gap-5">
         <video className='lg:h-96' src={video2} autoPlay muted loop></video>
         <div className="flex  mt-2 flex-col px-10 w-full gap-5">
 
-        
-          <p className='font-bold  lg:text-4xl text-3xl border-l-8  pl-4 hero-text' style={{ color:"#020202", borderColor: "#6e1b2a" }}>
+
+          <p className='font-bold  lg:text-4xl text-3xl border-l-8  pl-4 hero-text' style={{ color: "#020202", borderColor: "#6e1b2a" }}>
             Our Partners
           </p>
-{/*
+          {/*
           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Project Purkul </p>
             <a className='text-indigo-600' href="https://www.projectpurkul.com/">projectpurkul.com</a>
@@ -70,13 +73,13 @@ export default function Home() {
             <p>Zindagi Mubarak</p>
             <a className='text-indigo-600' href="https://www.instagram.com/zindagi.mubarak/">insta.zindagimubarak.com</a>
           </li> */}
-          <p>
-          Project Purkul creates beautiful and functional handicrafts using intricate techniques such as patchwork, applique, and quilting. Gyanoday uplifts marginalized communities by providing educational opportunities since 2001. Himaagman Foundation's "Empowering Futures" initiative supports 150 underprivileged children with essential materials, school bags, and uniforms. UCOST, an autonomous government body, focuses on science and technology development in Uttarakhand. Giri Foundation aims to uplift 1 million Himalayan women through skill training in business, financial literacy, management, and confidence building. Project Aaina fosters self-reflection and inner consciousness through artistic events like mindfulness retreats and community welfare activities. Hindska Trust believes in education for all and empowers communities through educational initiatives. Lastly, Zindagi Mubarak is a festival celebrating life, organized by @ishqestantv and @meghna_chatterji, promoting a joyful celebration of existence.
+          <p className='lg:block hidden'>
+            Project Purkul creates beautiful and functional handicrafts using intricate techniques such as patchwork, applique, and quilting. Gyanoday uplifts marginalized communities by providing educational opportunities since 2001. Himaagman Foundation's "Empowering Futures" initiative supports 150 underprivileged children with essential materials, school bags, and uniforms. UCOST, an autonomous government body, focuses on science and technology development in Uttarakhand. Giri Foundation aims to uplift 1 million Himalayan women through skill training in business, financial literacy, management, and confidence building. Project Aaina fosters self-reflection and inner consciousness through artistic events like mindfulness retreats and community welfare activities. Hindska Trust believes in education for all and empowers communities through educational initiatives. Lastly, Zindagi Mubarak is a festival celebrating life, organized by @ishqestantv and @meghna_chatterji, promoting a joyful celebration of existence.
           </p>
-        </div> 
+        </div>
       </div>
       <Partners />
-      <FeaturedImageGallery/>
+      <FeaturedImageGallery />
       <Contact />
     </>
   )
