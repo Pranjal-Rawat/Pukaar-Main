@@ -7,8 +7,10 @@ export default function Partners() {
                 <div className="max-w-7xl mx-auto p-4 sm:p-3 lg:p-1">
                     <div className="container mx-auto px-3 bg-white">
                         <div className="mb-4 text-center">
-                            <h4 className="text-base text-gray-600 font-semibold tracking-wide uppercase">Our Partners</h4>
-{/*                             <p className="mt-2 text-3xl lg:text-3xl font-bold tracking-tight text-gray-900">Why Choose Us?</p> */}
+                            <p className='font-bold lg:text-4xl text-3xl px-5 hero-text' style={{ color: "#6e1b2a" }}>
+                                Our Partners
+                            </p>
+                            {/*                             <p className="mt-2 text-3xl lg:text-3xl font-bold tracking-tight text-gray-900">Why Choose Us?</p> */}
                         </div>
 
                         <div className="flex flex-wrap my-12">

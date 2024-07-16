@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <div className='flex flex-col lg:flex-row hero-img w-full lg:mt-0 mt-28 gap-5'>
         <video src={video} autoPlay muted loop></video>
-        <div className="flex items-center mt-10 pt-10 flex-col px-4 w-full gap-5">
-          <p className='font-bold lg:text-4xl text-3xl px-5 hero-text' style={{ color: "#6e1b2a" }}>
+        <div className="flex items- mt-10 lg:pt-10 flex-col px-4 w-full gap-5">
+          <p className='font-bold text-start lg:text-4xl text-3xl px-5 hero-text' style={{ color: "#6e1b2a" }}>
             Empowering Communities
           </p>
           <p className='px-5'>
