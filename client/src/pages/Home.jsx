@@ -5,6 +5,7 @@ import { Button, Typography } from '@mui/material'
 import Contact from '../components/Contact'
 import Partners from '../components/Partners'
 import About from '../components/About'
+import { FeaturedImageGallery } from '../components/Gallerry'
 export default function Home() {
   return (
     <>
@@ -75,6 +76,7 @@ export default function Home() {
         </div> 
       </div>
       <Partners />
+      <FeaturedImageGallery/>
       <Contact />
     </>
   )
