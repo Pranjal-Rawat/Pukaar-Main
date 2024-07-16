@@ -60,7 +60,7 @@ export default function Nav() {
     }, []);
 
     const handleDonateClick = () => {
-        setShowModal(true); // Open the modal when Donate Now is clicked
+       window.location.href = "https://razorpay.me/@tgciinstitute";
     };
 
     const closeModal = () => {
