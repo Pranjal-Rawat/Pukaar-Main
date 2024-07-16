@@ -16,6 +16,8 @@ export default function Home() {
           </p>
           <p className='px-5'>
             Welcome to Pukaar Sanstha, where our vision is to create a harmonious and sustainable world where individuals and communities thrive through empowerment, employment generation, sustainability, and eco-tourism. Discover our mission, initiatives, and the positive impact we're making both locally and globally.
+    <br/>
+            At Pukaar Sanstha, we strive to foster a future where every individual and community not only survives but thrives. Through our dedicated mission, we aim to empower marginalized groups, generate meaningful employment opportunities, promote sustainability practices, and champion eco-tourism initiatives. By doing so, we believe in creating a positive impact locally and globally, ensuring a more harmonious and sustainable world for generations to come.
           </p>
           <p className='flex justify-start w-full px-5' style={{ color: "#6e1b2a" }}>
             <Button variant='outlined' color='inherit' sx={{ fontWeight: "600" }}>
