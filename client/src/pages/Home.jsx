@@ -26,12 +26,12 @@ export default function Home() {
       </div>
       <About/>
 
-      <div id='partners' className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-28 gap-5">
+{/*       <div id='partners' className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-28 gap-5">
         <video className='lg:h-96' src={video2} autoPlay muted loop></video>
         <div className="flex  mt-2 flex-col px-10 w-full gap-5">
           <p className='font-bold  lg:text-4xl text-3xl border-l-8  pl-4 hero-text' style={{ color:"#020202", borderColor: "#6e1b2a" }}>
             Our Partners
-          </p>
+          </p> */}
 
 {/*           <li style={{color:"#6e1b2a"}} className='flex  text-lg font-medium justify-between'>
             <p>Project Purkul </p>
