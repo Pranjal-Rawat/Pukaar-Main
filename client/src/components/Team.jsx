@@ -28,9 +28,9 @@ export default function Team() {
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
                                     Mrs. Amrit Burrett
                                 </a>
-                                <p className="text-sm text-gray-600">CEO &amp; President</p>
+                                <p className="text-sm text-gray-600">Director</p>
                                 <p className="text-gray-500 text-base mt-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    
                                 </p>
                                 <div className="my-4 flex">
                                     <a href="#">
