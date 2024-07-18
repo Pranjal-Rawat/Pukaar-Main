@@ -75,7 +75,7 @@ export default function Nav() {
                     </div>
                     <div className="data flex flex-col gap-2">
                         <small className='text-gray-600'>Email Us at</small>
-                        <small className='font-bold text-slate-700 text-xs'><a href="mailto:pukaarsanstha@gmail.com">Email Us at @pukaarsanstha@gmail.com</a></small>
+                        <small className='font-bold text-slate-700 text-xs'>Email Us at @pukaarsanstha@gmail.com</small>
                     </div>
                 </div>
                 <div className="flex gap-4">
@@ -172,13 +172,13 @@ export default function Nav() {
                             <IconButton color='inherit'>
                                 <Mail />
                             </IconButton>
-                            <strong className='flex items-center'><a href="mailto:pukaarsanstha@gmail.com">Email Us at @pukaarsanstha@gmail.com</a></strong>
+                            <strong className='flex items-center'>@pukaarsanstha@gmail.com</strong>
                         </span>
                         <span className='flex align-middle gap-3'>
                             <IconButton color='inherit'>
                                 <Call />
                             </IconButton>
-                            <strong className='flex items-center'><a href="tel:+919837504123">Call Us at +91 9873504123</a></strong>
+                            <strong className='flex items-center'>+91 9873504123</strong>
                         </span>
                     </div>
                 </div>
