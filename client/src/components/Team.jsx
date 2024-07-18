@@ -19,18 +19,20 @@ export default function Team() {
                         <div
                             className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                             style={{
-                                backgroundImage: "url('https://images.pexels.com/photos/3785084/pexels-photo-3785084.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"
+                                backgroundImage: "url('https://static.wixstatic.com/media/35758e_bfc3d88e18974bf1b11619761ec2ce7d~mv2.jpg/v1/crop/x_117,y_0,w_964,h_1096/fill/w_386,h_439,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-09%20at%2010_29_edite.jpg')"
                             }}
-                            title="Woman holding a mug"
+                            title="Mrs. Amrit Burrett"
                         />
                         <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4">
                             <div>
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
-                                    Mrs. Amrit Burrett
+                                    Mrs. Amrit Marbaniang Burrett
                                 </a>
                                 <p className="text-sm text-gray-600">Director</p>
                                 <p className="text-gray-500 text-base mt-4">
-                                    
+                                    Mrs. Burrett has a diverse career spanning media, advertising, hospitality, and academia. Her holistic experiences and flexible mindset equip her to face challenges with a fresh perspective and positive attitude. Her heart is dedicated to the people and crafts of the hills.
+                                    Amrit Burrett's work, primarily in the Uttarakhand region, reflects a commitment to area-wide empowerment before gender-centric issues. She believes that a household thrives when everyone's work is appreciated, challenging traditional gender dynamics.
+                                    Project Purkul, initiated by Mrs. Burrett, aims to provide an independent space for women to generate income through their crafts. The focus is on empowering not only the artisans but also their families and the entire community. The project leverages branding and marketing tools to elevate local handicrafts, emphasizing collaboration for a stronger impact.
                                 </p>
                                 <div className="my-4 flex">
                                     <a href="#">
@@ -94,18 +96,22 @@ export default function Team() {
                         <div
                             className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                             style={{
-                                backgroundImage: "url('https://images.pexels.com/photos/3785084/pexels-photo-3785084.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"
+                                backgroundImage: "url('https://static.wixstatic.com/media/35758e_f6e3bdc7b2914f49a1c2b27d70467ce9~mv2.jpg/v1/fill/w_452,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-08%20at%2012_edited.jpg')"
                             }}
-                            title="Woman holding a mug"
+                            title="Khalid Alawneh"
                         />
                         <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4">
                             <div>
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
-                                    Yahya R. Makarim
+                                    Khalid Alawneh
                                 </a>
-                                <p className="text-sm text-gray-600">CEO &amp; President</p>
+                                <p className="text-sm text-gray-600">Co-Founder</p>
                                 <p className="text-gray-500 text-base mt-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Khalid has co-founded Project Purkul, Himagaman, and Project Innovation.
+                                    Himagaman focuses on advancing eco-tourism and tackling the issue of Village Migration in Uttarakhand by providing an income source in the villages.
+                                    Project Innovation works on adopting rural schools to provide an innovative curriculum and programme; the objective being to change and develop the education system with innovative ideas in turn
+                                    working on the overall development of the children studying in these schools. His most recent work is on Project Purkul, a handicrafts brand that was founded, sustained and fueled by the women of the region.
+                                    It is a social-entrepreneurship project, with the objective to create opportunities for sustainable income for the women of Purkul village.
                                 </p>
                                 <div className="my-4 flex">
                                     <a href="#">
@@ -169,18 +175,20 @@ export default function Team() {
                         <div
                             className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
                             style={{
-                                backgroundImage: "url('https://images.pexels.com/photos/3785084/pexels-photo-3785084.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"
+                                backgroundImage: "url('https://static.wixstatic.com/media/35758e_d75cab201e4046e582835118964acff0~mv2.jpg/v1/fill/w_452,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-07%20at%2012_17_40.jpg')"
                             }}
-                            title="Woman holding a mug"
+                            title="Sanghamitra Ghosh"
                         />
                         <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4">
                             <div>
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
-                                    Yahya R. Makarim
+                                    Sanghamitra Ghosh
                                 </a>
                                 <p className="text-sm text-gray-600">CEO &amp; President</p>
                                 <p className="text-gray-500 text-base mt-4">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Sanghamitra Ghosh completed her schooling from Woodstock School, Mussoorie and went on to do a Bachelors of Mass Media and MBA in Communication Management specialising in Advertising.
+                                    Six years of work experience include working for several non-profit organisations in various capacities,
+                                    setting up her hand block printing studio and brand, Nilam, and working in the hospitality field.
                                 </p>
                                 <div className="my-4 flex">
                                     <a href="#">
