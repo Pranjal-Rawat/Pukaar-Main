@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <div id='partners' className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-8 gap-5">
+{/*       <div id='partners' className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-8 gap-5">
         <video className='lg:h-96' src={video2} autoPlay muted loop></video>
         <div className="flex mt-2 flex-col px-10 w-full gap-5">
           <p className='font-bold lg:text-4xl text-3xl border-l-8 pl-4 hero-text' style={{ color: "#020202", borderColor: "#6e1b2a" }}>
@@ -111,7 +111,7 @@ export default function Home() {
             Project Purkul creates beautiful and functional handicrafts using intricate techniques such as patchwork, applique, and quilting. Gyanoday uplifts marginalized communities by providing educational opportunities since 2001. Himaagman Foundation's "Empowering Futures" initiative supports 150 underprivileged children with essential materials, school bags, and uniforms. UCOST, an autonomous government body, focuses on science and technology development in Uttarakhand. Giri Foundation aims to uplift 1 million Himalayan women through skill training in business, financial literacy, management, and confidence building. Project Aaina fosters self-reflection and inner consciousness through artistic events like mindfulness retreats and community welfare activities. Hindska Trust believes in education for all and empowers communities through educational initiatives. Lastly, Zindagi Mubarak is a festival celebrating life, organized by @ishqestantv and @meghna_chatterji, promoting a joyful celebration of existence.
           </p>
         </div>
-      </div>
+      </div> */}
       <Partners />
       <div ref={galleryRef}>
         <div className='px-4'>
