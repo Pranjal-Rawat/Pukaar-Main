@@ -75,7 +75,7 @@ export default function Nav() {
                     </div>
                     <div className="data flex flex-col gap-2">
                         <small className='text-gray-600'>Email Us at</small>
-                        <small className='font-bold text-slate-700 text-xs'><a href="mailto:example@gmail.com">Email Us at</a></small>
+                        <small className='font-bold text-slate-700 text-xs'><a href="mailto:pukaarsanstha@gmail.com">Email Us at</a></small>
                     </div>
                 </div>
                 <div className="flex gap-4">
@@ -86,7 +86,7 @@ export default function Nav() {
                     </div>
                     <div className="data flex flex-col gap-2">
                         <small className='text-gray-600'>Contact Us at</small>
-                        <small className='font-bold text-slate-700 text-xs'><a href="tel:+91 9837504123">Call Us at +91 9873504123</a></small>
+                        <small className='font-bold text-slate-700 text-xs'><a href="tel:+919837504123">Call Us at +91 9873504123</a></small>
                     </div>
                 </div>
             </nav>
