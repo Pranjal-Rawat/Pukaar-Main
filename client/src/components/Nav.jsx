@@ -64,7 +64,7 @@ export default function Nav() {
                     </div>
                     <div className="data flex flex-col gap-2">
                         <small className='text-gray-600'>You may reach us at</small>
-                        <small className='font-bold text-slate-700 text-xs'><a href="https://www.google.com/maps/dir/?api=1&destination=Salan%20Gaon,%20Bhagwant%20Pur,%20Brahman%20Gaon,%20Uttarakhand%20248001,%20India">Purkul Village, Dehradun</a></small>
+                        <small className='font-bold text-slate-700 text-xs'><a href="https://maps.app.goo.gl/6VW5vdpaiqXkiLGP9">Pacific Golf Estate, Dehradun</a></small>
                     </div>
                 </div>
                 <div className="flex gap-4">
