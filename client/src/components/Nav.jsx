@@ -64,7 +64,7 @@ export default function Nav() {
                     </div>
                     <div className="data flex flex-col gap-2">
                         <small className='text-gray-600'>You may reach us at</small>
-                        <small className='font-bold text-slate-700 text-xs'><a href="https://maps.app.goo.gl/6VW5vdpaiqXkiLGP9">Pacific Golf Estate, Dehradun</a></small>
+                        <small className='font-bold text-slate-700 text-xs'><a href="https://maps.app.goo.gl/uVZnrLqudCod6C5u7">Pacific Golf Estate, Dehradun</a></small>
                     </div>
                 </div>
                 <div className="flex gap-4">
@@ -86,7 +86,7 @@ export default function Nav() {
                     </div>
                     <div className="data flex flex-col gap-2">
                         <small className='text-gray-600'>Contact Us at</small>
-                        <small className='font-bold text-slate-700 text-xs'><a href="tel:+91 9837504123">Call Us</a></small>
+                        <small className='font-bold text-slate-700 text-xs'><a href="tel:+91 9837504123">Call Us at +91 9873504123</a></small>
                     </div>
                 </div>
             </nav>
