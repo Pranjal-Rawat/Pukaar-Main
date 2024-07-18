@@ -26,7 +26,7 @@ export default function Partners() {
 
                             <div className="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-4">
                                 <div className="flex items-center mb-6">
-                                    <img src="https://gyanoday.org.in/wp-content/uploads/2020/04/Logo-02-02-1024x298.webp" viewBox="0 0 32 32" width="20" height="20" fill="currentColor" className="h-6 w-6 text-gray-500"></img>
+                                    <img src="images/26.jpg" viewBox="0 0 32 32" width="20" height="20" fill="currentColor" className="h-6 w-6 text-gray-500"></img>
 {/*                                         <path d="M16 3C8.8 3 3 8.8 3 16s5.8 13 13 13 13-5.8 13-13c0-1.398-.188-2.793-.688-4.094L26.688 13.5c.2.8.313 1.602.313 2.5 0 6.102-4.898 11-11 11S5 22.102 5 16 9.898 5 16 5c3 0 5.695 1.195 7.594 3.094L25 6.688C22.7 4.386 19.5 3 16 3zm11.281 4.281L16 18.563l-4.281-4.282-1.438 1.438 5 5 .719.687.719-.687 12-12z"></path> */}
                                     <div className="ml-4 text-xl"><a class="ml-4 text-xl" href="https://gyanoday.org.in/">Gyanoday</a></div>
                                 </div>
