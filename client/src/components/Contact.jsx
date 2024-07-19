@@ -79,9 +79,8 @@ export default function Contact() {
                                             Our Location
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            Near Sakya Academy,  Samrajya Cottage,
-                                            Village Uttari Gaon road, Bhagwant Pur,
-                                            Dehradun, Uttarakhand 248009
+                                            G1, 306, Pacific Golf Estate, near USHA colony, Sahastradhara,
+                                            Dehradun, Kulhan Karanpur, Uttarakhand 248001
                                         </p>
                                     </div>
                                 </div>
@@ -120,7 +119,7 @@ export default function Contact() {
                                             Phone Number
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            +91 91490 23810
+                                            +91 98375 04123
                                         </p>
                                     </div>
                                 </div>
