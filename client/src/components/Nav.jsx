@@ -20,24 +20,7 @@ export default function Nav() {
     const [customAmount, setCustomAmount] = useState('');
     const [showDropdown, setShowDropdown] = useState(false);
 
-    const handleDonation = (amount) => {
-        setDonationAmount(amount);
-        setCustomAmount(''); // Clear custom amount when preset amount is selected
-    };
-
-    const handleCustomAmountChange = (event) => {
-        setCustomAmount(event.target.value);
-        setDonationAmount(''); // Clear preset amount when custom amount is entered
-    };
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        // Handle donation submission logic here
-        console.log(`Donating ${donationAmount || customAmount}`);
-        // Optionally, close modal after submission
-        closeModal();
-    };
-
+   
 
     useEffect(() => {
         const handleScroll = () => {
@@ -60,12 +43,10 @@ export default function Nav() {
     }, []);
 
     const handleDonateClick = () => {
-        setShowModal(true); // Open the modal when Donate Now is clicked
+        window.location.href = "https://razorpay.me/@tgciinstitute";
     };
 
-    const closeModal = () => {
-        setShowModal(false); // Close the modal
-    };
+
 
 
 
@@ -82,8 +63,8 @@ export default function Nav() {
                         </IconButton>
                     </div>
                     <div className="data flex flex-col gap-2">
-                        <small className='text-gray-600'>You may reach us here</small>
-                        <small className='font-bold text-slate-700 text-xs'>Harrawala Dehradun</small>
+                        <small className='text-gray-600'>You may reach us at</small>
+                        <small className='font-bold text-slate-700 text-xs'><a href="https://maps.app.goo.gl/uVZnrLqudCod6C5u7">Pacific Golf Estate, Dehradun</a></small>
                     </div>
                 </div>
                 <div className="flex gap-4">
@@ -93,8 +74,8 @@ export default function Nav() {
                         </IconButton>
                     </div>
                     <div className="data flex flex-col gap-2">
-                        <small className='text-gray-600'>You may reach us here</small>
-                        <small className='font-bold text-slate-700 text-xs'>Harrawala Dehradun</small>
+                        <small className='text-gray-600'>Email Us at</small>
+                        <small className='font-bold text-slate-700 text-xs'>pukaarsanstha@gmailcom</small>
                     </div>
                 </div>
                 <div className="flex gap-4">
@@ -104,8 +85,8 @@ export default function Nav() {
                         </IconButton>
                     </div>
                     <div className="data flex flex-col gap-2">
-                        <small className='text-gray-600'>You may reach us here</small>
-                        <small className='font-bold text-slate-700 text-xs'>Harrawala Dehradun</small>
+                        <small className='text-gray-600'>Contact Us at</small>
+                        <small className='font-bold text-slate-700 text-xs'>+91 9873504123</small>
                     </div>
                 </div>
             </nav>
@@ -140,7 +121,7 @@ export default function Nav() {
                         </div>
                     </NavLink>
                     <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="blog">Blog</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' onClick={handleDonateClick}>Donate Now</Link>
+                    {/*                     <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' onClick={handleDonateClick}>Donate Now</Link> */}
 
                 </div>
             </nav>
@@ -179,7 +160,7 @@ export default function Nav() {
                             setShowDropdown(!showDropdown);
                         }} style={{ cursor: "pointer" }} smooth={true} duration={500} to="/newsletter">Newsletters</Link></li>
                         {
-                            showDropdown && <div style={{transition:".2s all gap-1 linear"}}>
+                            showDropdown && <div style={{ transition: ".2s all gap-1 linear" }}>
                                 <li className='px-3'><Link>Previous</Link></li>
                                 <li className='px-3'><Link>Latest</Link></li>
                                 <li className='px-3'><Link>All Newsletters</Link></li>
@@ -191,13 +172,13 @@ export default function Nav() {
                             <IconButton color='inherit'>
                                 <Mail />
                             </IconButton>
-                            <strong className='flex items-center'>pukarhelpline@gmail.com</strong>
+                            <strong className='flex items-center'>pukaarsanstha@gmail.com</strong>
                         </span>
                         <span className='flex align-middle gap-3'>
                             <IconButton color='inherit'>
                                 <Call />
                             </IconButton>
-                            <strong className='flex items-center'>7017233256</strong>
+                            <strong className='flex items-center'>+91 9873504123</strong>
                         </span>
                     </div>
                 </div>
@@ -220,75 +201,7 @@ export default function Nav() {
                     </Button>
                 </div>
             </nav>
-            <Modal
-                isOpen={showModal}
-                onRequestClose={closeModal}
-                overlayClassName="overlay"
-                className="fixed h-96 top-32 modal w-full bg-white"
-            >
-                <div className="modal-content p-6">
-                    <h2>Donate Now</h2>
-                    <form onSubmit={handleSubmit}>
-                        <div className="flex flex-col gap-4 mt-4">
-                            {/* Preset donation amounts */}
-                            <div>
-                                <label className="inline-flex items-center">
-                                    <input
-                                        type="radio"
-                                        name="donation"
-                                        value="100"
-                                        checked={donationAmount === '100'}
-                                        onChange={() => handleDonation('100')}
-                                        className="form-radio"
-                                    />
-                                    <span className="ml-2">$100</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label className="inline-flex items-center">
-                                    <input
-                                        type="radio"
-                                        name="donation"
-                                        value="200"
-                                        checked={donationAmount === '200'}
-                                        onChange={() => handleDonation('200')}
-                                        className="form-radio"
-                                    />
-                                    <span className="ml-2">$200</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label className="inline-flex items-center">
-                                    <input
-                                        type="radio"
-                                        name="donation"
-                                        value="500"
-                                        checked={donationAmount === '500'}
-                                        onChange={() => handleDonation('500')}
-                                        className="form-radio"
-                                    />
-                                    <span className="ml-2">$500</span>
-                                </label>
-                            </div>
-                            {/* Custom donation amount */}
-                            <div className="flex items-center gap-2">
-                                <input
-                                    type="text"
-                                    placeholder="Enter custom amount"
-                                    value={customAmount}
-                                    onChange={handleCustomAmountChange}
-                                    className="form-input w-full"
-                                />
-                            </div>
-                            {/* Submit button */}
-                            <div className="flex justify-end">
-                                <Button type="submit" variant="contained" color="primary">Donate</Button>
-                                <Button onClick={closeModal} className="ml-2">Close</Button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </Modal>
+
 
         </>
     );
