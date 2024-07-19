@@ -3,8 +3,8 @@ import logo from '../Assests/pukaarsans.jpg';
 import logo2 from '../Assests/pukaarsans2.jpg';
 import { Divider, IconButton, Button } from '@mui/material';
 import { Close, Menu, ArrowDropDown, Call, Mail, LocationCity, ArrowUpward, ArrowDropUp } from '@mui/icons-material';
-import { Link as Link } from 'react-scroll';
-import { Link as NavLink } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as NavLink } from 'react-router-dom';
 import Modal from 'react-modal'; // Import Modal from react-modal
 import './Nav.css';
 
@@ -13,14 +13,8 @@ Modal.setAppElement('#root'); // Set the root element for accessibility
 export default function Nav() {
     const [showNav, setShowNav] = useState(false);
     const [fixed, setFixed] = useState(false);
-    const [showModal, setShowModal] = useState(false); // State to manage modal visibility
-    const navRef = useRef(null);
-
-    const [donationAmount, setDonationAmount] = useState('');
-    const [customAmount, setCustomAmount] = useState('');
     const [showDropdown, setShowDropdown] = useState(false);
-
-   
+    const navRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -45,10 +39,6 @@ export default function Nav() {
     const handleDonateClick = () => {
         window.location.href = "https://razorpay.me/@tgciinstitute";
     };
-
-
-
-
 
     return (
         <>
@@ -75,7 +65,7 @@ export default function Nav() {
                     </div>
                     <div className="data flex flex-col gap-2">
                         <small className='text-gray-600'>Email Us at</small>
-                        <small className='font-bold text-slate-700 text-xs'>pukaarsanstha@gmailcom</small>
+                        <small className='font-bold text-slate-700 text-xs'>pukaarsanstha@gmail.com</small>
                     </div>
                 </div>
                 <div className="flex gap-4">
@@ -94,10 +84,10 @@ export default function Nav() {
 
             <nav className='hidden lg:flex justify-center w-full absolute' style={{ top: "100px" }} >
                 <div className='flex px-52 py-4 rounded gap-8' style={{ background: "#6e1b2a", color: "#f1f1f1" }}>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className='hover:text-white' >Home</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="joinus">Join Us</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="about">About</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="partners">Our Partners</Link>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className='hover:text-white'>Home</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="joinus">Join Us</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="about">About</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="partners">Our Partners</ScrollLink>
                     <NavLink onClick={(e) => {
                         e.preventDefault();
                         setShowDropdown(!showDropdown);
@@ -115,14 +105,12 @@ export default function Nav() {
                             }
                         </span>
                         <div className={`absolute ${showDropdown ? 'showDropdown' : 'hideDropdown'} bg-white rounded text-black text-nowrap list-none px-3 py-5 flex flex-col gap-1 top-9`}>
-                            <Link to='/'>Latest </Link>
-                            <Link to='/'>Previous </Link>
-                            <Link to='/'>All Newsletter</Link>
+                            <NavLink to='/'>Latest </NavLink>
+                            <NavLink to='/'>Previous </NavLink>
+                            <NavLink to='/'>All Newsletter</NavLink>
                         </div>
                     </NavLink>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="blog">Blog</Link>
-                    {/*                     <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' onClick={handleDonateClick}>Donate Now</Link> */}
-
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='hover' to="blog">Blog</ScrollLink>
                 </div>
             </nav>
 
@@ -140,8 +128,6 @@ export default function Nav() {
                 </div>
             </nav>
 
-
-
             <nav ref={navRef} className={`lg:hidden fixed top-0 w-full flex py-3 justify-end ${showNav ? 'showNav' : 'hideNav'}`}>
                 <div style={{ width: "300px", height: "100vh", color: "#f1f1f1", background: "rgb(0,0,0)" }} className="fixed left-0 top-0 flex flex-col gap-8">
                     <div className="btn flex justify-end px-5 py-4">
@@ -150,20 +136,20 @@ export default function Nav() {
                         </IconButton>
                     </div>
                     <ul className='flex px-3 flex-col gap-3'>
-                        <li className='nav-link'><Link onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="/">Home</Link></li>
-                        <li className='nav-link'><Link onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="about">About</Link></li>
-                        <li className='nav-link'><Link onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="blog">Blog</Link></li>
-                        <li className='nav-link'><Link onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="joinus">Join Us</Link></li>
-                        <li className='nav-link'><Link onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="partners">Our Partners</Link></li>
-                        <li className='nav-link'><Link onClick={(e) => {
+                        <li className='nav-link'><ScrollLink onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="/">Home</ScrollLink></li>
+                        <li className='nav-link'><ScrollLink onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="about">About</ScrollLink></li>
+                        <li className='nav-link'><ScrollLink onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="blog">Blog</ScrollLink></li>
+                        <li className='nav-link'><ScrollLink onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="joinus">Join Us</ScrollLink></li>
+                        <li className='nav-link'><ScrollLink onClick={() => setShowNav(false)} style={{ cursor: "pointer" }} smooth={true} duration={500} to="partners">Our Partners</ScrollLink></li>
+                        <li className='nav-link'><ScrollLink onClick={(e) => {
                             e.preventDefault();
                             setShowDropdown(!showDropdown);
-                        }} style={{ cursor: "pointer" }} smooth={true} duration={500} to="/newsletter">Newsletters</Link></li>
+                        }} style={{ cursor: "pointer" }} smooth={true} duration={500} to="/newsletter">Newsletters</ScrollLink></li>
                         {
                             showDropdown && <div style={{ transition: ".2s all gap-1 linear" }}>
-                                <li className='px-3'><Link>Previous</Link></li>
-                                <li className='px-3'><Link>Latest</Link></li>
-                                <li className='px-3'><Link>All Newsletters</Link></li>
+                                <li className='px-3'><ScrollLink>Previous</ScrollLink></li>
+                                <li className='px-3'><ScrollLink>Latest</ScrollLink></li>
+                                <li className='px-3'><ScrollLink>All Newsletters</ScrollLink></li>
                             </div>
                         }
                     </ul>
@@ -189,20 +175,17 @@ export default function Nav() {
                     <img src={logo2} style={{ height: "100px", position: "absolute", top: "-3px" }} alt="" />
                 </div>
                 <div className="flex gap-3 items-center" style={{ color: "#6e1b2a" }}>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="about">About</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="blog">Blog</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="joinus">Join Us</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="partners">Our Partners</Link>
-                    <Link style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="/newsletter">Newsletters</Link>
-
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="about">About</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="blog">Blog</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="joinus">Join Us</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} className='nav-link-main' to="partners">Our Partners</ScrollLink>
+                    <NavLink to="/newsletter" className='nav-link-main'>Newsletters</NavLink>
                     <Button variant='outlined' color='inherit' sx={{ fontWeight: "600" }} onClick={handleDonateClick}>
                         Donate Now
                     </Button>
                 </div>
             </nav>
-
-
         </>
     );
 }
