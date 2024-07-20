@@ -1,6 +1,6 @@
 
 import React from 'react';
-import amrit from '../images/amrit.jpg'
+import amrit from '../images/amrit.png'
 export default function Team() {
     return (
         <div>
