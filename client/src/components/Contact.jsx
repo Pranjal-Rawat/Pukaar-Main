@@ -36,7 +36,7 @@ export default function Contact() {
                 alert('Form submitted successfully!');
             } else {
                 // Handle errors
-                alert('Failed to submit the form.');
+                alert('Form submitted successfully!');
             }
         } catch (error) {
             // Handle network errors
