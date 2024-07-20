@@ -21,7 +21,7 @@ export default function Team() {
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
                                     Mrs. Amrit Marbaniang Burrett
                                 </a>
-                                <p className="text-sm text-gray-600">Director</p>
+                                <p className="text-sm text-gray-600">President</p>
                                 <p className="text-gray-500 text-base mt-4">
                                     Mrs. Burrett has a diverse career spanning media, advertising, hospitality, and academia. Her holistic experiences and flexible mindset equip her to face challenges with a fresh perspective and positive attitude. Her heart is dedicated to the people and crafts of the hills.
                                     Amrit Burrett's work, primarily in the Uttarakhand region, reflects a commitment to area-wide empowerment before gender-centric issues. She believes that a household thrives when everyone's work is appreciated, challenging traditional gender dynamics.
@@ -92,7 +92,7 @@ export default function Team() {
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
                                     Khalid Alawneh
                                 </a>
-                                <p className="text-sm text-gray-600">Co-Founder</p>
+                                <p className="text-sm text-gray-600">Secretary</p>
                                 <p className="text-gray-500 text-base mt-4">
                                     Khalid has co-founded Project Purkul, Himagaman, and Project Innovation.
                                     Himagaman focuses on advancing eco-tourism and tackling the issue of Village Migration in Uttarakhand by providing an income source in the villages.
@@ -165,7 +165,7 @@ export default function Team() {
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
                                     Sanghamitra Ghosh
                                 </a>
-                                <p className="text-sm text-gray-600">CEO &amp; President</p>
+                                <p className="text-sm text-gray-600">Advisory Board Member</p>
                                 <p className="text-gray-500 text-base mt-4">
                                     Sanghamitra Ghosh completed her schooling from Woodstock School, Mussoorie and went on to do a Bachelors of Mass Media and MBA in Communication Management specialising in Advertising.
                                     Six years of work experience include working for several non-profit organisations in various capacities,
