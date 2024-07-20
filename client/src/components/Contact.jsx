@@ -79,8 +79,7 @@ export default function Contact() {
                                             Our Location
                                         </h4>
                                         <p className="text-base text-body-color dark:text-dark-6">
-                                            G1, 306, Pacific Golf Estate, near USHA colony, Sahastradhara,
-                                            Dehradun, Kulhan Karanpur, Uttarakhand 248001
+                                            G1, 306, Pacific Golf Estate, near USHA colony, Sahastradhara, Dehradun, Kulhan Karanpur, Uttarakhand 248001
                                         </p>
                                     </div>
                                 </div>
@@ -118,8 +117,8 @@ export default function Contact() {
                                         <h4 style={{ color: "#6e1b2a" }} className="mb-1 text-xl font-bold text-dark dark:text-white">
                                             Phone Number
                                         </h4>
-                                        <p className="text-base text-body-color dark:text-dark-6">
-                                            +91 98375 04123
+                                        <p onClick={() => window.location.href = "tel: 9837504123"} className="text-base text-body-color dark:text-dark-6">
+                                            9837504123
                                         </p>
                                     </div>
                                 </div>
@@ -143,7 +142,7 @@ export default function Contact() {
                                         <h4 style={{ color: "#6e1b2a" }} className="mb-1 text-xl font-bold text-dark dark:text-white">
                                             Email Address
                                         </h4>
-                                        <p className="text-base text-body-color dark:text-dark-6">
+                                        <p onClick={() => {window.location.href = "mailto: pukaarsanstha@gmail.com"}} className="text-base text-body-color dark:text-dark-6">
                                             pukaarsanstha@gmail.com
                                         </p>
                                     </div>
@@ -155,7 +154,7 @@ export default function Contact() {
                                 <form onSubmit={handleSubmit}>
                                     <div className="mb-6">
                                         <input
-                                        required
+                                            required
                                             type="text"
                                             name="name"
                                             placeholder="Your Name"
@@ -166,7 +165,7 @@ export default function Contact() {
                                     </div>
                                     <div className="mb-3">
                                         <input
-                                        required
+                                            required
                                             type="email"
                                             name="email"
                                             placeholder="Your Email"
@@ -177,7 +176,7 @@ export default function Contact() {
                                     </div>
                                     <div className="mb-3">
                                         <input
-                                        required
+                                            required
                                             type="text"
                                             name="phone"
                                             placeholder="Your Phone"
@@ -188,7 +187,7 @@ export default function Contact() {
                                     </div>
                                     <div className="mb-3">
                                         <textarea
-                                        required
+                                            required
                                             rows="6"
                                             name="message"
                                             placeholder="Your Message"

@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import amrit from '../images/amrit.jpg'
 export default function Team() {
     return (
         <div>
@@ -9,21 +9,14 @@ export default function Team() {
                     THE TEAM
                 </p>
                 <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-                   <span className="" style={{ color: "#6e1b2a" }}> Our Members</span>
+                    <span className="" style={{ color: "#6e1b2a" }}> Our Members</span>
                 </h3>
             </div>
-            <div className="flex justify-center">
-
-                <div className="sm:grid grid-cols-3 gap-6" style={{ width: '97vw' }}>
-                    <div className="max-w-sm w-full lg:max-w-full lg:flex  my-10">
-                        <div
-                            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style={{
-                                backgroundImage: "url('https://static.wixstatic.com/media/35758e_bfc3d88e18974bf1b11619761ec2ce7d~mv2.jpg/v1/crop/x_117,y_0,w_964,h_1096/fill/w_386,h_439,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-09%20at%2010_29_edite.jpg')"
-                            }}
-                            title="Mrs. Amrit Burrett"
-                        />
-                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4">
+            <div className="flex justify-center px-4">
+                <div className="sm:grid grid-cols-3 gap-6 mx-auto" style={{ width: '' }}>
+                    <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded pt-5 max-w-sm items-center flex-col w-full lg:max-w-full flex  my-10">
+                        <img className='h-40 w-40 ' style={{ borderRadius: "50%", objectFit: "" }} src={amrit} alt="" />
+                        <div className="-r p-4">
                             <div>
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
                                     Mrs. Amrit Marbaniang Burrett
@@ -92,15 +85,9 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="max-w-sm w-full lg:max-w-full lg:flex  my-10">
-                        <div
-                            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style={{
-                                backgroundImage: "url('https://static.wixstatic.com/media/35758e_f6e3bdc7b2914f49a1c2b27d70467ce9~mv2.jpg/v1/fill/w_452,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-08%20at%2012_edited.jpg')"
-                            }}
-                            title="Khalid Alawneh"
-                        />
-                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4">
+                    <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded pt-5 max-w-sm items-center flex-col w-full lg:max-w-full flex  my-10">
+                        <img className='h-40 w-40 ' style={{ borderRadius: "50%", objectFit: "" }} src='https://static.wixstatic.com/media/35758e_f6e3bdc7b2914f49a1c2b27d70467ce9~mv2.jpg/v1/fill/w_452,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-08%20at%2012_edited.jpg' alt="" />
+                        <div className=" lg:rounded-r p-4">
                             <div>
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
                                     Khalid Alawneh
@@ -171,15 +158,9 @@ export default function Team() {
                             </div>
                         </div>
                     </div>
-                    <div className="max-w-sm w-full lg:max-w-full lg:flex  my-10">
-                        <div
-                            className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-                            style={{
-                                backgroundImage: "url('https://static.wixstatic.com/media/35758e_d75cab201e4046e582835118964acff0~mv2.jpg/v1/fill/w_452,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-07%20at%2012_17_40.jpg')"
-                            }}
-                            title="Sanghamitra Ghosh"
-                        />
-                        <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4">
+                    <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded pt-5 max-w-sm items-center flex-col w-full lg:max-w-full flex  my-10">
+                        <img className='h-40 w-40 ' style={{ borderRadius: "50%", objectFit: "" }} src='https://static.wixstatic.com/media/35758e_d75cab201e4046e582835118964acff0~mv2.jpg/v1/fill/w_452,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-07%20at%2012_17_40.jpg' alt="" />
+                        <div className=" lg:rounded-r p-4">
                             <div>
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
                                     Sanghamitra Ghosh

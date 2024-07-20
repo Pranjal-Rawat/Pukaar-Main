@@ -75,6 +75,5 @@ export default function Hero() {
                 </section>
             </section>
         </div>
-        <div></div>
     );
 }

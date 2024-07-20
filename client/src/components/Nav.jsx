@@ -86,7 +86,7 @@ export default function Nav() {
                     </div>
                     <div className="data flex flex-col gap-2">
                         <small className='text-gray-600'>Contact Us at</small>
-                        <small className='font-bold text-slate-700 text-xs'>+91 9873504123</small>
+                        <small className='font-bold text-slate-700 text-xs'>+91 9837504123</small>
                     </div>
                 </div>
             </nav>
