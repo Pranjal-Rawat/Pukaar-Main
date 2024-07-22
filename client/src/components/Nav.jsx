@@ -7,6 +7,7 @@ import { Link as Link } from 'react-scroll';
 import { Link as NavLink } from 'react-router-dom'
 import Modal from 'react-modal'; // Import Modal from react-modal
 import './Nav.css';
+import Donation from './Donation';
 
 Modal.setAppElement('#root'); // Set the root element for accessibility
 
@@ -203,6 +204,7 @@ export default function Nav() {
             </nav>
 
 
+            <Donation/>
         </>
     );
 }

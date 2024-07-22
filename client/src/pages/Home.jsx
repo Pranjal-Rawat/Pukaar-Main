@@ -18,7 +18,6 @@ export default function Home() {
   const images = [
     '../Assests/Homeslide.mp4',
     '../Assests/partners.mp4',
-    // Add more image paths as needed
   ];
 
   useEffect(() => {
