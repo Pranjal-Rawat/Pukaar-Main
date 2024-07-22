@@ -7,7 +7,7 @@ import { Link as Link } from 'react-scroll';
 import { Link as NavLink } from 'react-router-dom'
 import Modal from 'react-modal'; // Import Modal from react-modal
 import './Nav.css';
-import Donation from './Donation';
+import { useDonation } from './Donation';
 
 Modal.setAppElement('#root'); // Set the root element for accessibility
 
@@ -16,12 +16,9 @@ export default function Nav() {
     const [fixed, setFixed] = useState(false);
     const [showModal, setShowModal] = useState(false); // State to manage modal visibility
     const navRef = useRef(null);
-
-    const [donationAmount, setDonationAmount] = useState('');
-    const [customAmount, setCustomAmount] = useState('');
     const [showDropdown, setShowDropdown] = useState(false);
 
-   
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -44,9 +41,19 @@ export default function Nav() {
     }, []);
 
     const handleDonateClick = () => {
-        window.location.href = "https://razorpay.me/@tgciinstitute";
+        openModal();
     };
 
+    const { openModal, setDonation, setName, setEmail, setPhoneno, setAddress } = useDonation();
+
+    const handleOpenModal = () => {
+        setName('');
+        setEmail('');
+        setPhoneno('');
+        setAddress('');
+        setDonation(0);
+        openModal();
+    };
 
 
 
@@ -204,7 +211,7 @@ export default function Nav() {
             </nav>
 
 
-            <Donation/>
+            
         </>
     );
 }

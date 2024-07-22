@@ -9,6 +9,7 @@ import { FeaturedImageGallery } from '../components/Gallerry';
 import Nav from '../components/Nav';
 import Loader from '../components/Loader'; // Assuming Loader component is correctly implemented
 import Team from '../components/Team';
+import { useDonation } from '../components/Donation';
 
 export default function Home() {
   const galleryRef = useRef(null);
@@ -19,6 +20,8 @@ export default function Home() {
     '../Assests/Homeslide.mp4',
     '../Assests/partners.mp4',
   ];
+
+  const { openModal } = useDonation(); // Access openModal function from the context
 
   useEffect(() => {
     const handleIntersect = (entries) => {
@@ -93,31 +96,21 @@ export default function Home() {
             At Pukaar Sanstha, we strive to foster a future where every individual and community not only survives but thrives. Through our dedicated mission, we aim to empower marginalized groups, generate meaningful employment opportunities, promote sustainability practices, and champion eco-tourism initiatives. By doing so, we believe in creating a positive impact locally and globally, ensuring a more harmonious and sustainable world for generations to come.
           </p>
           <p className='flex justify-start w-full px-5' style={{ color: "#6e1b2a" }}>
-            <Button variant='outlined' color='inherit' sx={{ fontWeight: "600" }}>
+            <Button variant='outlined' color='inherit' sx={{ fontWeight: "600" }} onClick={openModal}>
               Donate now
             </Button>
           </p>
         </div>
       </div>
       <About />
-{/*       <div id='partners' className="flex lg:px-5 flex-col lg:flex-row hero-img w-full lg:mt-0 mt-8 gap-5">
-        <video className='lg:h-96' src={video2} autoPlay muted loop></video>
-        <div className="flex mt-2 flex-col px-10 w-full gap-5">
-          <p className='font-bold lg:text-4xl text-3xl border-l-8 pl-4 hero-text' style={{ color: "#020202", borderColor: "#6e1b2a" }}>
-            Our Partners
-          </p>
-          <p className='lg:block hidden'>
-            Project Purkul creates beautiful and functional handicrafts using intricate techniques such as patchwork, applique, and quilting. Gyanoday uplifts marginalized communities by providing educational opportunities since 2001. Himaagman Foundation's "Empowering Futures" initiative supports 150 underprivileged children with essential materials, school bags, and uniforms. UCOST, an autonomous government body, focuses on science and technology development in Uttarakhand. Giri Foundation aims to uplift 1 million Himalayan women through skill training in business, financial literacy, management, and confidence building. Project Aaina fosters self-reflection and inner consciousness through artistic events like mindfulness retreats and community welfare activities. Hindska Trust believes in education for all and empowers communities through educational initiatives. Lastly, Zindagi Mubarak is a festival celebrating life, organized by @ishqestantv and @meghna_chatterji, promoting a joyful celebration of existence.
-          </p>
-        </div>
-      </div> */}
+
       <Partners />
       <div ref={galleryRef}>
         <div className='px-4'>
           <FeaturedImageGallery />
         </div>
       </div>
-      <Team/>
+      <Team />
       <Contact />
     </>
   );
