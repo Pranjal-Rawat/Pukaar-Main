@@ -1,7 +1,7 @@
 
 import React from 'react';
 import amrit from '../images/amrit.png'
-import amrit from '../images/shivam.png'
+import amrit from '../images/shivam.jpg'
 export default function Team() {
     return (
         <div>
