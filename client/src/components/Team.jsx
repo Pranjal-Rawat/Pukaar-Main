@@ -1,6 +1,7 @@
 
 import React from 'react';
 import amrit from '../images/amrit.png'
+import shivam from '../images/shivam.png'
 export default function Team() {
     return (
         <div>
@@ -230,7 +231,7 @@ export default function Team() {
                         </div>
                     </div>
                      <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded pt-5 max-w-sm items-center flex-col w-full lg:max-w-full flex  my-10">
-                        <img className='h-40 w-40 ' style={{ borderRadius: "50%", objectFit: "" }} src='https://static.wixstatic.com/media/35758e_f6e3bdc7b2914f49a1c2b27d70467ce9~mv2.jpg/v1/fill/w_452,h_424,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202023-08-08%20at%2012_edited.jpg' alt="" />
+                        <img className='h-40 w-40 ' style={{ borderRadius: "50%", objectFit: "" }} src={shivam} alt="" />
                         <div className=" lg:rounded-r p-4">
                             <div>
                                 <a href="#" className="text-gray-900 font-bold text-xl mb-2 transition duration-500 ease-in-out" style={{ color: "#6e1b2a" }}>
@@ -238,7 +239,7 @@ export default function Team() {
                                 </a>
                                 <p className="text-sm text-gray-600">Treasury</p>
                                 <p className="text-gray-500 text-base mt-4">
-                                    xperienced Chief Executive Officer with a demonstrated history of working in the health wellness and fitness industry.
+                                    Experienced Chief Executive Officer with a demonstrated history of working in the health wellness and fitness industry.
                                     Skilled in Business Coaching, Franchising, CEOs, Qualifying Prospects, and Board of Directors.
                                     Strong business development professional with a Master of Business Administration.
                                     Coordinator - Amit Khadi Gramodyog Sansthan, Managing Director & Founder of Kalshyan’s Group Director - Himaagman Foundation MD - Himaagman Marketing Pvt Ltd
