@@ -23,7 +23,7 @@ export default function Contact() {
         setLoading(true);
 
         try {
-            const response = await fetch('https://your-api-endpoint.com/contact', {
+            const response = await fetch('https://pukaar-main-server.vercel.app/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
