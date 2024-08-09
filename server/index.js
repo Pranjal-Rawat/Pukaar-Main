@@ -4,9 +4,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-    origin: '*'
-}));
+app.use(cors());
 
 // MongoDB connection
 const URI = "mongodb+srv://pukaarsanstha:I60868V899LQREow@cluster0.pv61dno.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
