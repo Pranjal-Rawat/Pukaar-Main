@@ -34,13 +34,13 @@ app.get('/', (req, res) => {
 // POST route to handle form submission
 app.post('/contact', async (req, res) => {
     try {
-        const { name, email, phone, message } = req.body;
+        // const { name, email, phone, message } = req.body;
 
-        // Create a new Contact document
-        const contact = new Contact({ name, email, phone, message });
+        // // Create a new Contact document
+        // const contact = new Contact({ name, email, phone, message });
 
-        // Save the contact to the database
-        await contact.save();
+        // // Save the contact to the database
+        // await contact.save();
 
         // Send a success response
         res.status(200).send({ message: 'Form submitted successfully!' });
