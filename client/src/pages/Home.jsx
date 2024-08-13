@@ -70,13 +70,13 @@ export default function Home() {
       {!showNav && <Nav />}
       <div className='flex flex-col lg:flex-row hero-img w-full lg:mt-0 mt-28 gap-5'>
         {/* Use the currentImgIndex to dynamically change the video source */}
-        {videoLoading ? (
-          <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 999 }}>
+        {/* {videoLoading ? ( */}
+          {/* <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 999 }}>
             <Loader /> {/* Display loader component while video is loading */}
-          </div>
-        ) : (
+         
+        {/* ) : (
           <></>
-        )}
+        )} */}
         <video
           src={video} // Ensure to use video as src here
           autoPlay
