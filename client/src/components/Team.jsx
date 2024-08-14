@@ -14,7 +14,7 @@ export default function Team() {
                 </h3>
             </div>
             <div className="flex justify-center px-4">
-                <div className="sm:grid grid-cols-3 gap-6 mx-auto" style={{ width: '' }}>
+                <div className="sm:grid grid-cols-4 gap-6 mx-auto" style={{ width: '' }}>
                     <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded pt-5 max-w-sm items-center flex-col w-full lg:max-w-full flex  my-10">
                         <img className='h-40 w-40 ' style={{ borderRadius: "50%", objectFit: "" }} src={amrit} alt="" />
                         <div className="-r p-4">
@@ -25,8 +25,9 @@ export default function Team() {
                                 <p className="text-sm text-gray-600">President</p>
                                 <p className="text-gray-500 text-base mt-4">
                                     Mrs. Burrett has a diverse career spanning media, advertising, hospitality, and academia. Her holistic experiences and flexible mindset equip her to face challenges with a fresh perspective and positive attitude. Her heart is dedicated to the people and crafts of the hills.
-                                    Amrit Burrett's work, primarily in the Uttarakhand region, reflects a commitment to area-wide empowerment before gender-centric issues. She believes that a household thrives when everyone's work is appreciated, challenging traditional gender dynamics.
-                                    Project Purkul, initiated by Mrs. Burrett, aims to provide an independent space for women to generate income through their crafts. The focus is on empowering not only the artisans but also their families and the entire community. The project leverages branding and marketing tools to elevate local handicrafts, emphasizing collaboration for a stronger impact.
+                                    Amrit Burrett's work, primarily in the Uttarakhand region, reflects a commitment to area-wide empowerment before gender-centric issues. 
+                                    {/* She believes that a household thrives when everyone's work is appreciated, challenging traditional gender dynamics. */}
+                                    {/* Project Purkul, initiated by Mrs. Burrett, aims to provide an independent space for women to generate income through their crafts. The focus is on empowering not only the artisans but also their families and the entire community. The project leverages branding and marketing tools to elevate local handicrafts, emphasizing collaboration for a stronger impact. */}
                                 </p>
                                 <div className="my-4 flex">
                                     <a href="#">
@@ -98,8 +99,9 @@ export default function Team() {
                                     Khalid has co-founded Project Purkul, Himagaman, and Project Innovation.
                                     Himagaman focuses on advancing eco-tourism and tackling the issue of Village Migration in Uttarakhand by providing an income source in the villages.
                                     Project Innovation works on adopting rural schools to provide an innovative curriculum and programme; the objective being to change and develop the education system with innovative ideas in turn
-                                    working on the overall development of the children studying in these schools. His most recent work is on Project Purkul, a handicrafts brand that was founded, sustained and fueled by the women of the region.
-                                    It is a social-entrepreneurship project, with the objective to create opportunities for sustainable income for the women of Purkul village.
+                                    working on the overall development of the children studying in these schools.
+                                     {/* His most recent work is on Project Purkul, a handicrafts brand that was founded, sustained and fueled by the women of the region. */}
+                                    {/* It is a social-entrepreneurship project, with the objective to create opportunities for sustainable income for the women of Purkul village. */}
                                 </p>
                                 <div className="my-4 flex">
                                     <a href="#">
