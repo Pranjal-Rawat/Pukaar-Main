@@ -116,6 +116,7 @@ export default function Footer() {
         <div class="w-full p-4 text-center">
           © 2024 Copyright
           <a href="https://tw-elements.com/">Purkul</a>
+          <a href="">Designed & Developed by Kartik Dua</a>
         </div>
       </footer>
     </div>
